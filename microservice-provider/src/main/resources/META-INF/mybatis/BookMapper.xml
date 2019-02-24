@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jin.mapper.BookMapper">
+	<resultMap type="com.jin.entity.Book" id="BaseBookResultMap">
+		<id column="id" javaType="long" property="id"/>
+		<result column="book_name" javaType="string" property="bookName"/>
+		<result column="author" javaType="string" property="author"/>
+		<result column="db_source" javaType="string" property="dbSource"/>
+	</resultMap>
+	<!-- queryBookById 根据图书id查询一本书 -->
+	<select id="queryBookById" parameterType="long" resultMap="BaseBookResultMap">
+		select b.id,b.book_name,b.author,b.db_source from book b where b.id = #{id}
+	</select>
+</mapper>
