@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+import lombok.extern.slf4j.Slf4j;
 import com.jin.entity.Book;
 import com.jin.service.BookService;
 
@@ -15,6 +15,7 @@ import com.jin.service.BookService;
  * @since	2019-1-27 21:22
  *
  */
+@Slf4j
 @RestController
 @RequestMapping("/book")
 public class BookController {
@@ -25,7 +26,7 @@ public class BookController {
 	
 	@GetMapping("/queryBookById/{id}")
 	public Book queryBookById(@PathVariable("id") Long id) {
-
+		log.info("入参为:-------------->{}",id);
 		Book book = bookService.queryBookById(id);
 		
 		return book;

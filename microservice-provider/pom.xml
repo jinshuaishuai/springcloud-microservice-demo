@@ -12,5 +12,76 @@
    		<artifactId>microservice-api</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-dependencies</artifactId>
+	    <type>pom</type>
+	</dependency>
+
+       <dependency>
+       	<groupId>log4j</groupId>
+       	<artifactId>log4j</artifactId>
+       </dependency>
+       <dependency>
+       	<groupId>ch.qos.logback</groupId>
+       	<artifactId>logback-core</artifactId>
+       </dependency>
+       <!-- 引入mysql依赖 -->
+       <dependency>
+       	<groupId>mysql</groupId>
+       	<artifactId>mysql-connector-java</artifactId>
+       </dependency>
+       <!-- 引入数据源依赖 -->
+       <dependency>
+       	<groupId>com.alibaba</groupId>
+       	<artifactId>druid</artifactId>
+       	<version>${druid.version}</version>
+       </dependency>
+       <!-- 引入jedis -->
+       <dependency>
+		<groupId>redis.clients</groupId>
+		<artifactId>jedis</artifactId>
+   	</dependency>
+   	<dependency>
+   		<groupId>io.springfox</groupId>
+   		<artifactId>springfox-swagger-ui</artifactId>
+    </dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+	</dependency>
+	<!-- 引入自动添加实体类属性jar -->
+	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+	<dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <scope>provided</scope>
+	</dependency>
+
+	<!-- SpringBoot集成Shiro -->
+	<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring -->
+	<dependency>
+	    <groupId>org.apache.shiro</groupId>
+	    <artifactId>shiro-spring</artifactId>
+	</dependency>
+	<!-- 导入Mybatis启动依赖 -->
+	<dependency>
+  		<groupId>org.mybatis.spring.boot</groupId>
+  		<artifactId>mybatis-spring-boot-starter</artifactId>
+  	</dependency>
+  	<!--mybatis page helper-->
+    <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper</artifactId>
+    </dependency>
+    <!-- 引入spring AOP依赖包 -->
+    <dependency>
+   		<groupId>org.springframework.boot</groupId>
+   		<artifactId>spring-boot-starter-aop</artifactId>
+	</dependency>
   </dependencies>
 </project>

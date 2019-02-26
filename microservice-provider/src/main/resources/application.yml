@@ -2,3 +2,4 @@ server:
   port:  8001
   servlet:
     context-path:  /microservice-bookService-8001
+debug:  true
