@@ -69,16 +69,6 @@
 	    <groupId>org.apache.shiro</groupId>
 	    <artifactId>shiro-spring</artifactId>
 	</dependency>
-	<!-- 导入Mybatis启动依赖 -->
-	<dependency>
-  		<groupId>org.mybatis.spring.boot</groupId>
-  		<artifactId>mybatis-spring-boot-starter</artifactId>
-  	</dependency>
-  	<!--mybatis page helper-->
-    <dependency>
-        <groupId>com.github.pagehelper</groupId>
-        <artifactId>pagehelper</artifactId>
-    </dependency>
     <!-- 引入spring AOP依赖包 -->
     <dependency>
    		<groupId>org.springframework.boot</groupId>

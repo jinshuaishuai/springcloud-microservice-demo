@@ -9,8 +9,9 @@ public interface BookService {
 	/**
 	 * 添加一本图书
 	 * @param book
+	 * @return 
 	 */
-	public void addBook(Book book);
+	public Integer addBook(Book book);
 	/**
 	 * 根据id查询一本图书
 	 * @param id

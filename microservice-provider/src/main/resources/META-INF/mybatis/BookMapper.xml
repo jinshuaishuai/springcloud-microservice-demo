@@ -14,4 +14,12 @@
 	<select id="queryBookById" parameterType="long" resultMap="BaseBookResultMap">
 		select b.id,b.book_name,b.author,b.db_source from book b where b.id = #{id}
 	</select>
+	<!-- listAllBook 查询出所有的图书信息 -->
+	<select id="listAllBook" resultMap="BaseBookResultMap">
+		select id,book_name,author,db_source from book;
+	</select>
+	<!-- addBook 添加一本图书 -->
+	<insert id="addBook" parameterType="com.jin.entity.Book">
+		insert into book(book_name,author,db_source) values(#{bookName},#{author},select database())
+	</insert>
 </mapper>

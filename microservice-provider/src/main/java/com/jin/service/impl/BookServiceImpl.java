@@ -26,8 +26,8 @@ public class BookServiceImpl implements BookService {
 	
 	@Transactional
 	@Override
-	public void addBook(Book book) {
-		bookMapper.addBook(book);
+	public Integer addBook(Book book) {
+		return bookMapper.addBook(book);
 
 	}
 
