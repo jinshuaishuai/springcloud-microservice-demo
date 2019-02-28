@@ -14,23 +14,18 @@
     	<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-	<dependency>
-	    <groupId>org.springframework.cloud</groupId>
-	    <artifactId>spring-cloud-dependencies</artifactId>
-	    <type>pom</type>
-	</dependency>
 
+    <dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    </dependency>
        <dependency>
-       	<groupId>log4j</groupId>
-       	<artifactId>log4j</artifactId>
-       </dependency>
-       <dependency>
-       	<groupId>ch.qos.logback</groupId>
-       	<artifactId>logback-core</artifactId>
-       </dependency>
+       <groupId>ch.qos.logback</groupId>
+       <artifactId>logback-core</artifactId>
+    </dependency>
        <!-- 引入mysql依赖 -->
        <dependency>
        	<groupId>mysql</groupId>
