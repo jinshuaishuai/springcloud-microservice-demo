@@ -2,11 +2,10 @@ server:
   port: 8002
 eureka:
   instance:
-    hostname:  localhost #eureka 服务端地址
-    
+    hostname:  localhost #eureka 服务端地址 
   client:
-    register-with-eureka:  false #false 表示不向注册中心注册自己
-    fetch-registry: false #false 表示自己端就是注册中心,我的职责就是维护实例,不需要去检索
-    server-url:
-      defaultZone:  http://${eureka.instance.hostname}:${server.port}/eureka #设置与eureka server交互的地址查询服务和注册服务
+    registerWithEureka:  false #false 表示不向注册中心注册自己
+    fetchRegistry: false #false 表示自己端就是注册中心,我的职责就是维护实例,不需要去检索
+    serviceUrl:
+      defaultZone:  http://localhost:8002/eureka #设置与eureka server交互的地址查询服务和注册服务
       

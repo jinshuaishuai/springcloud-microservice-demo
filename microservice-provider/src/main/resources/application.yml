@@ -1,5 +1,14 @@
 server:
   port:  8001
-  servlet:
-    context-path:  /microservice-bookService-8001
+spring:
+  application:
+    name:  microservice-bookService-8001
+#开启日志
 debug:  true
+
+#将服务的提供者提供的微服务注册进eureka服务注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8002/eureka  #eureka服务的绝对地址
+  
