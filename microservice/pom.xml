@@ -125,8 +125,7 @@
 			<scope>import</scope>
 		</dependency>
   	</dependencies>
-  </dependencyManagement>	
-
+  </dependencyManagement>
 	
   <modules>
   	<module>microservice-api</module>

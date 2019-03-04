@@ -11,4 +11,13 @@ eureka:
   client:
     serviceUrl:
       defaultZone:  http://localhost:8002/eureka  #eureka服务的绝对地址
-  
+  instance:
+    instanceId:  图书服务的提供方       #相当于是一个说明,说明该服务的作用
+    preferIpAddress:  true      #开启ip地址可视.
+    
+info:
+  app.name:  microservice
+  company.name:  靳帅的个人公司
+  build.artifactId:  $project.artifactId$
+  build.version:  $project.version$
+  developer.number:  靳帅,吴迎港,刘列恒,王磊,王亮亮
