@@ -24,6 +24,8 @@ public class BookControllerConsumer {
 
 	@GetMapping(value = "/listBooks", produces = "application/json")
 	public List<Book> listAllBooks() {
+		
+		
 		List<Book> books = restTemplate.getForObject(UrlConstant.URL_PREFIX + "/listBooks",List.class);
 		log.info("调用listAllBooks接口,查询出的数据为:------->{}",books);
 		return books;
